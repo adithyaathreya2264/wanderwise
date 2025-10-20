@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WanderWise — Plan Smart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+  <!-- Background elements -->
+  <div class="bg-decoration">
+    <div class="floating-icon"><i class="fas fa-plane"></i></div>
+    <div class="floating-icon"><i class="fas fa-map-marker-alt"></i></div>
+    <div class="floating-icon"><i class="fas fa-compass"></i></div>
+    <div class="floating-icon"><i class="fas fa-mountain"></i></div>
+    <div class="floating-icon"><i class="fas fa-umbrella-beach"></i></div>
+  </div>
+
+  <main class="container">
+    <!-- Header with travel theme -->
+    <header class="main-header">
+      <div class="logo-section">
+        <i class="fas fa-globe-americas logo-icon"></i>
+        <h1 class="app-title">WanderWise</h1>
+      </div>
+      <p class="tagline">✈️ Your Adventure Starts Here</p>
+    </header>
+
+    <form id="planForm" class="travel-card main-form">
+      <div class="form-header">
+        <i class="fas fa-route"></i>
+        <h2>Plan Your Dream Trip</h2>
+      </div>
+
+      <div class="input-group">
+        <label class="travel-label">
+          <i class="fas fa-map-marker-alt input-icon"></i>
+          <span>Where do you want to go?</span>
+        </label>
+        <input id="destination" class="travel-input" placeholder="e.g. Goa, India" required />
+      </div>
+
+      <div class="trip-type-section">
+        <label class="section-title">
+          <i class="fas fa-hiking input-icon"></i>
+          Trip type
+        </label>
+        <div class="radio-group">
+          <label class="radio-card">
+            <input type="radio" name="tripType" value="adventure" checked/>
+            <div class="radio-content">
+              <i class="fas fa-mountain"></i>
+              <span>Adventure</span>
+            </div>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="tripType" value="relaxing" />
+            <div class="radio-content">
+              <i class="fas fa-umbrella-beach"></i>
+              <span>Relaxing</span>
+            </div>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="tripType" value="historical" />
+            <div class="radio-content">
+              <i class="fas fa-landmark"></i>
+              <span>Historical</span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label class="travel-label">
+          <i class="fas fa-car input-icon"></i>
+          <span>Mode of transport</span>
+        </label>
+        <select id="transport" class="travel-select">
+          <option value="own">🚗 Own vehicle</option>
+          <option value="public">🚌 Public transport</option>
+          <option value="agency">✈️ Travel agency</option>
+        </select>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-magic"></i>
+          Plan my trip
+        </button>
+        <button id="aiItin" type="button" class="btn btn-secondary">
+          <i class="fas fa-robot"></i>
+          Quick AI itinerary
+        </button>
+      </div>
+    </form>
+
+    <section id="results" class="results-section">
+      <div id="map" class="travel-card map-container" style="height:360px; display:none;">
+        <div class="card-header">
+          <i class="fas fa-map"></i>
+          <h3>Your Journey Map</h3>
+        </div>
+        <div class="map"></div>
+      </div>
+      <div id="list" class="travel-card itinerary-list">
+        <div class="card-header">
+          <i class="fas fa-list-alt"></i>
+          <h3>Itinerary Details</h3>
+        </div>
+      </div>
+      <div id="aiOutput" class="travel-card ai-suggestions glass-style">
+        <div class="card-header">
+          <i class="fas fa-lightbulb"></i>
+          <h3>AI Recommendations</h3>
+        </div>
+        <pre></pre>
+      </div>
+    </section>
+  </main>
+
+  <!-- Loading spinner -->
+  <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+    <div class="loading-content">
+      <div class="plane-animation">
+        <i class="fas fa-plane"></i>
+      </div>
+      <p>Planning your amazing journey...</p>
+    </div>
+  </div>
+
+  <!-- Google Maps JS (frontend) -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwSC_eAIhbTYY3hzgz_b0NAvCPG0ieKlU&libraries=places"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
