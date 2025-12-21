@@ -24,7 +24,7 @@ Users can:
 ---
 
 ## 📂 File Structure
-
+```
 wanderwise/
 ├─ backend/
 │ ├─ server.js # Express backend with API routes
@@ -36,7 +36,7 @@ wanderwise/
 │ ├─ styles.css # Minimal styling + animations
 │ └─ app.js # Frontend logic
 └─ README.md # Project docs
-
+```
 
 ---
 
