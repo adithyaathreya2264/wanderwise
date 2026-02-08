@@ -1,4 +1,4 @@
-# 🌍 WanderWise
+# WanderWise
 
 WanderWise is an **AI-powered travel planning web app**.  
 It helps you plan trips by combining **Google Maps** (routes, transport, agencies) with **OpenAI** (AI itineraries).  
@@ -7,14 +7,14 @@ Users can:
 - Enter a **destination**
 - Pick a **trip type** (Adventure, Relaxing, Historical, etc.)
 - Select **mode of transport**:
-  - 🚗 Own Vehicle → shows driving route on Google Maps
-  - 🚌 Public Transport → lists transit options (buses, trains, etc.)
-  - 🏢 Travel Agency → lists available agencies in that location
+  - Own Vehicle → shows driving route on Google Maps
+  - Public Transport → lists transit options (buses, trains, etc.)
+  - Travel Agency → lists available agencies in that location
 - Generate a **Quick AI itinerary** with activities and food suggestions ✨
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Frontend**: HTML, CSS, Vanilla JavaScript, Google Maps JS API  
 - **Backend**: Node.js, Express.js  
@@ -23,7 +23,7 @@ Users can:
 
 ---
 
-## 📂 File Structure
+## File Structure
 ```
 wanderwise/
 ├─ backend/
