@@ -10,7 +10,7 @@ Users can:
   - Own Vehicle → shows driving route on Google Maps
   - Public Transport → lists transit options (buses, trains, etc.)
   - Travel Agency → lists available agencies in that location
-- Generate a **Quick AI itinerary** with activities and food suggestions ✨
+- Generate a **Quick AI itinerary** with activities and food suggestions
 
 ---
 
