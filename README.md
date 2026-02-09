@@ -40,7 +40,7 @@ wanderwise/
 
 ---
 
-## 🔑 Environment Setup
+## Environment Setup
 
 Create a `backend/.env` file:
 
@@ -68,7 +68,7 @@ Directions API
 Places API
 (Make sure billing is enabled — you get $200 free/month)
 
-⚙️ Installation & Running
+  Installation & Running
 1. Clone project
 git clone https://github.com/yourusername/wanderwise.git
 cd wanderwise
@@ -89,7 +89,7 @@ curl http://localhost:5000/api/ping
 3. Frontend
 
 Just open frontend/index.html in your browser.
-👉 For local hosting, you can use:
+  For local hosting, you can use:
 
 npx http-server frontend
 
